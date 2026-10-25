@@ -6,7 +6,7 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 10000,
+  timeout: 60000, // Render (plan gratis) tarda en despertar tras inactividad
 });
 
 // Interceptor para inyectar token de autenticación (si existiera)
